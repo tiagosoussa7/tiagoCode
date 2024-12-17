@@ -7,6 +7,7 @@ export const links = [
   { name: "home", path: "/" },
   { name: "sobre", path: "/about" },
   { name: "projetos", path: "/project" },
+  { name: "certificados", path: "/certificate" },
   { name: "contato", path: "/contact" },
 ];
 
@@ -14,7 +15,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-6">
       {links.map((link, index) => {
         return (
           <Link
@@ -22,7 +23,7 @@ export default function Nav() {
             key={index}
             className={`${
               link.path === pathname && "hidden"
-            } hover:text-accent hover:border-b-[1px] hover:border-accent transition-all duration-300`}
+            } hover:text-accent hover:border-b-[1px] hover:border-accent transition-all duration-500`}
           >
             {link.name}
           </Link>

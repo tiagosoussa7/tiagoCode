@@ -17,9 +17,10 @@ export default function Mobile() {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuBurger className="text-[32px] text-accent" />
       </SheetTrigger>
+
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-28 mb-32 text-center">
+        <div className="mt-16 mb-14 text-center">
           <Logo />
         </div>
 
