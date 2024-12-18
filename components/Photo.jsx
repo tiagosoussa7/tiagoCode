@@ -27,7 +27,7 @@ export default function Photo() {
                 quality={100}
                 priority
                 alt=""
-                className="mix-blend-lighten opacity-50 rounded-full"
+                className="mix-blend-lighten opacity-70 rounded-full"
               />
             </div>
 

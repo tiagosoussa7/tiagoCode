@@ -6,7 +6,7 @@ const data = [
   { num: 7, text: "Graduações e qualificações" },
   { num: 8, text: "Technologias aprendidas" },
   { num: 5, text: "Projetos completados" },
-  { num: 80, text: "code commits" },
+  { num: 80, text: "Códigos comitados" },
 ];
 
 export default function Data() {

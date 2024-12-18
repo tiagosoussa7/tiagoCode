@@ -20,7 +20,7 @@ export default function Mobile() {
 
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-16 mb-14 text-center">
+        <div className="mt-32 mb-36 text-center">
           <Logo />
         </div>
 
@@ -33,7 +33,7 @@ export default function Mobile() {
                 key={index}
                 className={`${
                   link.path === pathname && "hidden"
-                } hover:text-accent hover:border-b-[1px] hover:border-accent transition-all duration-300`}
+                } hover:text-accent hover:border-b-[1px] h-12 flex justify-center items-center hover:border-accent transition-all duration-300`}
               >
                 {link.name}
               </Link>
