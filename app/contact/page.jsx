@@ -223,14 +223,14 @@ export default function Contact() {
             opacity: 1,
             transition: { delay: 1, duration: 1, ease: "easeInOut" },
           }}
-          className="hidden lg:flex relative w-[620px] h-[560px] mix-blend-lighten rounded-xl -right-14 -bottom-3 overflow-hidden"
+          className="hidden xl:flex relative w-[620px] h-[560px] mix-blend-lighten rounded-xl -right-14 -bottom-3 overflow-hidden"
         >
           <Image
             src="/contact/pc.png"
-            className="object-cover opacity-50"
+            className="object-cover opacity-70"
             fill
             quality={100}
-            alt=""
+            alt="imagem de escritório"
           />
         </motion.div>
       </div>

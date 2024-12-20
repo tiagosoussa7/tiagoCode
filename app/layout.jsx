@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Transition from "@/components/Transition";
+import Particle from "@/components/Particle";
 
 const quantum = localFont({
   src: "./fonts/Quantum.otf",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${quantum.variable} ${tech.variable} ${bruno.variable} ${megrim.variable} antialiased`}
       >
+        <Particle />
         <Header />
         <Transition>{children}</Transition>
       </body>

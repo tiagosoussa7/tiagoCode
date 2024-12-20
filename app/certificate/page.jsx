@@ -11,60 +11,6 @@ import Certificates from "@/components/Certificates";
 
 const data = [
   {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
-    href: "",
-    category: "graduação",
-    img: "/certificate/thumb-1.png",
-    title: "Analista de Sistemas",
-  },
-  {
     href: "/files/riHappy.pdf",
     target: "_blank",
     rel: "noopener noreferrer",
@@ -80,12 +26,6 @@ const data = [
     category: "backend",
     img: "/certificate/cubosAcademy.png",
     title: "BackEnd - javaScript",
-  },
-  {
-    href: "",
-    category: "fullstack",
-    img: "/certificate/thumb-1.png",
-    title: "desenvolver python",
   },
 ];
 
@@ -124,18 +64,18 @@ export default function Certificate() {
       <div className="container mx-auto">
         <Tabs defaultValue="todos" className="w-full flex flex-col">
           <div className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between mb-[10px]">
-            <div className="sm:text-2xl text-xl mb-[10px] xl:mb-0">
-              Meus certificados
+            <div className="sm:text-2xl text-xl mb-[10px] xl:mb-0 text-accent">
+              certificados
             </div>
 
             {/* render tab triggers */}
-            <TabsList className="bg-primary border-2 rounded-[8px] max-w-max h-full flex flex-col md:flex-row gap-4">
+            <TabsList className="bg-primary border-2 border-accent rounded-[8px] max-w-max h-full flex flex-col md:flex-row gap-4">
               {tabData.map((item, index) => {
                 return (
                   <TabsTrigger
                     value={item.category}
                     key={index}
-                    className="capitalize w-[120px] hover:bg-primary rounded-[8px]"
+                    className="capitalize w-[120px] hover:bg-accent-hover rounded-[8px]"
                     onClick={() => setTabValue(item.category)}
                   >
                     {item.category}
@@ -148,7 +88,7 @@ export default function Certificate() {
           {/* select tab */}
           <TabsContent value={tabValue} className="w-full">
             <ScrollArea className="h-[550px] p-4">
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-[15px]">
+              <div className="grid grid-cols-1 xm:grid-cols-2 lg:grid-cols-4 gap-[15px]">
                 <AnimatePresence>
                   {filterCertificate
                     .slice(0, visibleItems)

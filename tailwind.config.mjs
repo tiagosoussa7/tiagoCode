@@ -12,6 +12,7 @@ export default {
       padding: "15px",
     },
     screens: {
+      xm: "440px",
       sm: "640px",
       md: "768px",
       lg: "940px",
@@ -26,6 +27,7 @@ export default {
     extend: {
       colors: {
         primary: "#1c1c22",
+        secondary: "#232329",
         accent: {
           DEFAULT: "#a02fee",
           hover: "#5d009d",

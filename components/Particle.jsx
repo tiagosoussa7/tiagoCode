@@ -14,7 +14,7 @@ export default function Particle() {
   return (
     <Particles
       id="tsparticles"
-      className="container h-[80%] -z-10 absolute"
+      className="md:h-screen md:w-screen h-[170%] w-full -z-10 absolute"
       init={init}
       loaded={loaded}
       options={{

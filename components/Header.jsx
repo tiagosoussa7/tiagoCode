@@ -1,13 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import Nav from "./Nav";
 import Mobile from "./Mobile";
 import Socials from "./Socials";
-
+//
 export const Logo = () => {
   return (
     <Link href="/">
-      <h1 className="font-quartenary md:text-4xl text-3xl ">
-        Tiago <span className="text-accent">ITalo</span>_
+      <h1 className="font-quartenary md:text-4xl text-3xl text-accent hover:text-white">
+        Tiago <span className="text-white">ITalo</span>_
       </h1>
     </Link>
   );

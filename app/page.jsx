@@ -24,9 +24,6 @@ export default function Home() {
             </span>
           </div>
 
-          {/* particles */}
-          <Particle />
-
           {/* photo */}
           <div className="order-1 lg:mb-0 lg:pb-0 pb-6">
             <Photo />
