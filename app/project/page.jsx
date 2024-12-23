@@ -44,12 +44,7 @@ const projects = [
     title: "projeto 2",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit maxime itaque quasi porro recusandae.",
-    stack: [
-      { icon: <FaHtml5 /> },
-      { icon: <FaCss3 /> },
-      { icon: <FaJs /> },
-      { icon: <FaNodeJs /> },
-    ],
+    stack: [{ name: "Python" }, { name: "postgrees" }, { name: "visual code" }],
     video: "/teste0.mp4",
     live: "",
     github: "",
@@ -168,7 +163,7 @@ export default function Project() {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-auto rounded-[6px] relative group flex justify-center items-center bg-secondary">
+                    <div className="h-[400px] rounded-[6px] relative group flex justify-center items-center bg-secondary">
                       {/* overlay */}
 
                       {/* video */}
@@ -188,7 +183,7 @@ export default function Project() {
 
               {/* slider buttons */}
               <Slide
-                containerStyles="flex gap-2 absolute xl:left-60 left-0  bottom-[calc(50%_-_22px)] xl:bottom-32 z-20 
+                containerStyles="flex gap-2 absolute xl:left-60 left-0  bottom-[calc(50%_-_22px)] xl:bottom-16 z-20 
                 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent-hover rounded-[6px] hover:bg-accent
                 text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"

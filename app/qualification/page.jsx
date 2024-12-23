@@ -336,7 +336,7 @@ export default function Qualification() {
                                   {item.icon}
                                 </div>
                               </TooltipTrigger>
-                              <TooltipContent className="bg-accent border-accent rounded-[4px]">
+                              <TooltipContent className="bg-accent border-accent rounded-[4px] transition-all duration-500">
                                 <p>{item.name}</p>
                               </TooltipContent>
                             </Tooltip>
@@ -373,7 +373,7 @@ export default function Qualification() {
                                   {item.icon}
                                 </div>
                               </TooltipTrigger>
-                              <TooltipContent className="bg-accent border-accent rounded-[4px]">
+                              <TooltipContent className="bg-accent border-accent rounded-[4px] transition-all duration-500">
                                 <p>{item.name}</p>
                               </TooltipContent>
                             </Tooltip>
